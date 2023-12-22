@@ -1,0 +1,51 @@
+TRIANGULAR WAVE NORMAL
+
+#include<reg51.h>
+void main(void)
+{
+ 	while(1)
+	{	
+                for(P3=0;P3<255;P3++);
+                for(P3=254;P3>0;P3--);
+        }
+}
+
+
+TRIANGULAR WAVE AMPLITUDE CHANGE 
+
+#include<reg51.h>
+void main(void)
+{
+ 	while(1)
+	{
+		unsigned int i,j;
+                for(P3=0;P3<100;P3++);
+                   {
+			for(i=0;i<5;i++);
+		   }
+		for(P3=100;P3>0;P3--);
+                   {
+			for(j=0;j<5;j++);
+		   }
+	}
+}
+
+
+TRIANGULAR WAVE WAVELENGTH CHANGE 
+
+#include<reg51.h>
+void main(void)
+{
+	unsigned int i,j;
+ 	while(1)
+	{
+		for(P3=0;P3<=255;P3++)
+		{
+			for(i=0;i<10;i++);
+		}
+		for(P3=255;P3>=0;P3--)
+		{
+			for(j=0;j<10;j++);
+		}
+	}
+}
